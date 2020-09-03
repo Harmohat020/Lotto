@@ -2,7 +2,7 @@ body{
   background: linear-gradient(to right, rgb(255 224 0), #cc9900);
 }
 h6{
-	text-align: center;
+  text-align: center;
 }
 .dot {
   height: 50px;
@@ -13,12 +13,12 @@ h6{
   background: radial-gradient(circle 11.66667px at 26% 26%,hsla(0, 0%, 100%, 0.8) 5%,hsla(0, 5%, 25%, 0) 60%),radial-gradient(circle farthest-side at 26% 26%,#ffe74d 0,#ffe74d 40%,#fd0 60%,#fd0 70%,#e6b400 110%);
 }
 .Getrokken-Nummers{
-	text-decoration-line: underline;
+  text-decoration-line: underline;
   margin-top: 10px;
 }
 .Lotto-Form{
-	display: grid;
-	justify-content: center;
+  display: grid;
+  justify-content: center;
 }
 #randomBtn,#submit-form,#playAgainBtn{
   border-color: black;
@@ -54,13 +54,13 @@ h6{
 }
 
 #ball1,#ball2,#ball3,#ball4,#ball5,#ball6,#ballExtra{
-	width: 75%;
+  width: 75%;
 }
 #inputGroup-sizing-default{
-	background-color: #fd0;
-	font-weight: bolder;
+  background-color: #fd0;
+  font-weight: bolder;
 }
 #inputGroup-sizing-default-1{
-	background-color: blue;
-	font-weight: bolder;
+  background-color: blue;
+  font-weight: bolder;
 }
