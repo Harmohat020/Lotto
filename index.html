@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Lotto</title>
+   <!--Bootstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!--JQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!--Own CSS File -->
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+<!--Begin Screen with start button -->
+<div style="text-align:center;">
+ <button type="button" class="btn btn-warning" id="playBtn">Play</button>
+</div>
+<!--End of begin screen -->
+
+<!--Form display where user can input numbers -->
+ <div class="Lotto-Form"  id="lotto-form" style="display:none;">
+         <h2>Enter the 6 Numbers:</h2>
+         <h6>The number must be between 1 and 45</h6>
+         <div class="input-group mb-3">
+           <div class="input-group-prepend">
+             <span class="input-group-text" id="inputGroup-sizing-default">Ball 1</span>
+           </div>
+           <input type="number" name="getal1" min="1" max ="45" placeholder="Number 1..." id="ball1">
+         </div>
+
+         <div class="input-group mb-3">
+           <div class="input-group-prepend">
+             <span class="input-group-text" id="inputGroup-sizing-default">Ball 2</span>
+           </div>
+           <input type="number" name="getal2" min="1" max ="45" placeholder="Number 2..." id="ball2">
+         </div>
+
+         <div class="input-group mb-3">
+           <div class="input-group-prepend">
+             <span class="input-group-text" id="inputGroup-sizing-default">Ball 3</span>
+           </div>
+          <input type="number" name="getal3" min="1" max ="45" placeholder="Number 3..." id="ball3">
+         </div>
+
+         <div class="input-group mb-3">
+           <div class="input-group-prepend">
+             <span class="input-group-text" id="inputGroup-sizing-default">Ball 4</span>
+           </div>
+           <input type="number" name="getal4" min="1" max ="45" placeholder="Number 4..." id="ball4">
+         </div>
+
+         <div class="input-group mb-3">
+           <div class="input-group-prepend">
+             <span class="input-group-text" id="inputGroup-sizing-default">Ball 5</span>
+           </div>
+           <input type="number" name="getal5" min="1" max ="45" placeholder="Number 5..." id="ball5">
+         </div>
+
+         <div class="input-group mb-3">
+           <div class="input-group-prepend">
+             <span class="input-group-text" id="inputGroup-sizing-default">Ball 6</span>
+           </div>
+           <input type="number" name="getal6" min="1" max ="45" placeholder="Number 6..." id="ball6">
+         </div>
+
+         <div class="input-group mb-3">
+           <div class="input-group-prepend">
+             <span class="input-group-text" id="inputGroup-sizing-default-1">Extra</span>
+           </div>
+           <input type="number" name="getal7" min="1" max ="45" placeholder="Reserve Number..." id="ballExtra">
+         </div>
+
+         <div style="text-align:center;">
+            <input type="submit" name="SubmitButton" class="btn btn-warning" id="submit-form" value="confirm"/>
+         </div>
+   </div>
+<!-- END OF FORM -->
+
+<br>
+<!-- Random Button -->
+ <div style="text-align:center;">
+   <input type="submit" value="random" id="randomBtn" class="btn btn-warning" style="display:none;">
+ </div>
+<!--End of Random Button -->
+
+<!--display of chosen numbers and results -->
+<div id="results-display" style="display:none;text-align:center;">
+   <div>
+     <h3>De Trekking/Lotto</h3>
+     <h5>Your Numbers:</h5>
+     <span class="dot"><p class="Getrokken-Nummers" id="chosen-number1"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="chosen-number2"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="chosen-number3"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="chosen-number4"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="chosen-number5"></p></span>
+     <span class="dot" id=""><p class="Getrokken-Nummers" id="chosen-number6"></p></span>
+     <span class="" id="reserve"><p class="Getrokken-Nummers" id="chosen-numberExtra"></p></span>
+   </div>
+   <br>
+   <div>
+     <h5>The Lotto Numbers:</h5>
+     <span class="dot"><p class="Getrokken-Nummers" id="lotto-number1"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="lotto-number2"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="lotto-number3"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="lotto-number4"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="lotto-number5"></p></span>
+     <span class="dot"><p class="Getrokken-Nummers" id="lotto-number6"></p></span>
+     <span class="" id="reserve"><p class="Getrokken-Nummers" id="lotto-numberExtra"></p></span>
+   </div>
+</div>
+
+
+<br>
+
+ <h5 style="text-align:center;display:none;" id="aantal"></h5>
+ <h5 style="text-align:center;display:none;" id="result"></h5>
+
+ <input type="button" class="btn btn-warning" value="Play Again" id="playAgainBtn" style="display: none;"/>
+
+<!--End of chosen numbers/results -->
+ <script src="animate.js" charset="utf-8"></script>
+ <script src="script.js" charset="utf-8"></script>
+  
+ </body>
+</html>

@@ -1,0 +1,66 @@
+body{
+  background: linear-gradient(to right, rgb(255 224 0), #cc9900);
+}
+h6{
+	text-align: center;
+}
+.dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: bolder;
+  background: radial-gradient(circle 11.66667px at 26% 26%,hsla(0, 0%, 100%, 0.8) 5%,hsla(0, 5%, 25%, 0) 60%),radial-gradient(circle farthest-side at 26% 26%,#ffe74d 0,#ffe74d 40%,#fd0 60%,#fd0 70%,#e6b400 110%);
+}
+.Getrokken-Nummers{
+	text-decoration-line: underline;
+  margin-top: 10px;
+}
+.Lotto-Form{
+	display: grid;
+	justify-content: center;
+}
+#randomBtn,#submit-form,#playAgainBtn{
+  border-color: black;
+}
+#playAgainBtn{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#playBtn{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-color: black;
+}
+#vl {
+  border-left: 6px solid black;
+  height: 50px;
+}
+#reserve {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: bolder;
+  background: radial-gradient(circle 11.66667px at 26% 26%,hsla(0, 0%, 100%, 0.8) 5%,hsla(0, 5%, 25%, 0) 60%),radial-gradient(circle farthest-side at 26% 26%,#584dff 0,#4d6bff 40%,#5155fd 60%,#005aff 70%,#1b00e6 110%);
+}
+
+#ball1,#ball2,#ball3,#ball4,#ball5,#ball6,#ballExtra{
+	width: 75%;
+}
+#inputGroup-sizing-default{
+	background-color: #fd0;
+	font-weight: bolder;
+}
+#inputGroup-sizing-default-1{
+	background-color: blue;
+	font-weight: bolder;
+}
