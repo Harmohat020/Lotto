@@ -88,8 +88,7 @@ window.onload=function(){
     document.querySelector('#aantal').innerHTML = aantal;
  }
 
-  
-  //When user whants random numbers, he/she can click the random btn
+  //When user wants random numbers, he/she can click the random btn
   function randomNumber(){
         document.querySelector("#ball1").value  =Math.floor(Math.random() * 45)+ 1;
         document.querySelector("#ball2").value =Math.floor(Math.random() * 45)+ 1;
